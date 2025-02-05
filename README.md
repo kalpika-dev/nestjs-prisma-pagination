@@ -1,16 +1,16 @@
 # Installation
 
 ```bash
-npm install --save @nodeteam/nestjs-prisma-pagination
+npm install --save @kalpika-dev/nestjs-prisma-pagination
 ```
 
 # Usage
 
 ```typescript
 // import paginators
-import { paginator, searchPaginator } from '@nodeteam/nestjs-prisma-pagination';
+import { paginator, searchPaginator } from '@kalpika-dev/nestjs-prisma-pagination';
 // import types
-import { PaginatorTypes } from '@nodeteam/nestjs-prisma-pagination';
+import { PaginatorTypes } from '@kalpika-dev/nestjs-prisma-pagination';
 ```
 
 # #Paginator
@@ -54,7 +54,7 @@ full example:
 ```typescript
 import PrismaService from '@providers/prisma/prisma.service';
 import { Injectable } from '@nestjs/common';
-import { PaginatorTypes, paginator } from '@nodeteam/nestjs-prisma-pagination';
+import { PaginatorTypes, paginator } from '@kalpika-dev/nestjs-prisma-pagination';
 
 const paginate: PaginatorTypes.PaginateFunction = paginator({ perPage: 10 });
 
@@ -143,7 +143,7 @@ full example:
 ```typescript
 import PrismaService from '@providers/prisma/prisma.service';
 import { Injectable } from '@nestjs/common';
-import { PaginatorTypes, searchPaginator } from '@nodeteam/nestjs-prisma-pagination';
+import { PaginatorTypes, searchPaginator } from '@kalpika-dev/nestjs-prisma-pagination';
 
 const searchPaginate: PaginatorTypes.SearchPaginateFunction = searchPaginator({ perPage: 10 });
 
@@ -255,4 +255,4 @@ result => {
 
 ```
 
-Check useful npm packages from NodeTeam: https://www.npmjs.com/org/nodeteam
+Check useful npm packages from kalpika-dev: https://www.npmjs.com/org/kalpika-dev
